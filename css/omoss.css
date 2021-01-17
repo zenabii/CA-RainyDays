@@ -20,6 +20,8 @@ p {
   color: #333333;
 }
 
+/*** RESPONSIVE  ***/
+
 @media (max-width: 900px) {
   .about {
     width: 400px;

@@ -61,7 +61,6 @@ h3 {
   text-decoration: none;
 }
 
-/* CSS GRID STYLING - I FAILED LOL*/
 body {
   margin: 0%;
 }
@@ -385,6 +384,8 @@ footer ul a {
   height: auto;
   padding: 10px 0px;
 }
+
+/*** RESPONSIVE  ***/
 
 @media (min-width: 1000px) {
   nav {

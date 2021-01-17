@@ -119,6 +119,8 @@ p {
   margin: 10px 0px;
 }
 
+/*** BUTTON ***/
+
 .purchase {
   display: flex;
   justify-content: center;
@@ -205,6 +207,8 @@ hr {
 .h2-jacket {
   padding: 10px 0px;
 }
+
+/*** RESPONSIVE ***/
 
 @media (max-width: 1000px) {
   .jackets {

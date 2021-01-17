@@ -113,6 +113,8 @@ hr {
   padding: 2px;
 }
 
+/*** BUTTON  ***/
+
 .filter-button {
   width: 300px;
   display: flex;
@@ -160,6 +162,8 @@ hr {
   font-weight: 500;
   letter-spacing: 2px;
 }
+
+/*** RESPONSIVE ***/
 
 @media (max-width: 1000px) {
   .jackets {

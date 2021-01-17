@@ -21,6 +21,8 @@ main {
   text-decoration: none;
 }
 
+/*** BUTTON  ***/
+
 .contact-press {
   background-color: #7fbf3f;
   max-width: 250px;
@@ -202,6 +204,8 @@ p {
   width: 1200px;
   padding: 30px;
 }
+
+/*** RESPONSIVE  ***/
 
 @media (max-width: 1100px) {
   .payment {
