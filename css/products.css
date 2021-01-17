@@ -1,0 +1,195 @@
+main {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h2-jacket {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  color: #333333;
+  padding: 10px 0px;
+  font-size: 2em;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  margin: auto;
+  width: 1200px;
+  padding: 30px 0px 70px 0px;
+}
+
+.table a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.filter {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex: row;
+  justify-content: right;
+  align-items: right;
+  padding-bottom: 40px;
+}
+
+.filter a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  padding: 10px 0px;
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.filter a:hover {
+  text-decoration: underline;
+  text-decoration-color: #7fbf3f;
+  text-decoration-thickness: 3px;
+}
+
+.all-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 40px;
+}
+
+.items {
+  height: auto;
+}
+
+.items p {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.jackets {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.jacket-preivew {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.jacket-image {
+  height: 300px;
+  background-image: url("../images/jackets/smix.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jacket-image:hover {
+  background-image: url("../images/jackets/smix-side.jpg");
+}
+
+.jacket-preivew a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  letter-spacing: 2px;
+}
+
+hr {
+  display: flex;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #9b9b9b;
+  width: auto;
+  padding: 2px;
+}
+
+.filter-button {
+  width: 300px;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-button:hover {
+  font-weight: 800;
+}
+
+.filter-button a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+.contact-press {
+  background-color: #7fbf3f;
+  max-width: 350px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.contact-press:hover {
+  background-color: #f2f2f2;
+}
+
+.contact-press a:hover {
+  color: #333333;
+}
+
+.button-space {
+  padding: 70px 0px;
+}
+
+.contact-press a {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1000px) {
+  .jackets {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .jackets {
+    grid-template-columns: 1fr;
+  }
+
+  .all-products {
+    grid-template-columns: 1fr;
+  }
+
+  .table {
+    width: 400px;
+  }
+
+  .filter-button {
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .filter {
+    flex-direction: column;
+  }
+}

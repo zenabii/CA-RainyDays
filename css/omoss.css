@@ -1,0 +1,27 @@
+.about-picture {
+  background-image: url("../images/about-us.jpg");
+  height: 700px;
+  background-position: center top;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  margin: auto;
+  width: 450px;
+  padding: 80px 10px;
+}
+
+p {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+@media (max-width: 900px) {
+  .about {
+    width: 400px;
+  }
+}

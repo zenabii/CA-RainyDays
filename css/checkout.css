@@ -1,0 +1,262 @@
+main {
+  margin: 10px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  margin: auto;
+  width: 1200px;
+  padding: 30px 0px 70px 0px;
+}
+
+.table a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.contact-press {
+  background-color: #7fbf3f;
+  max-width: 250px;
+  display: flex;
+  margin-left: auto;
+  border-radius: 25px;
+}
+
+.contact-press:hover {
+  background-color: #f2f2f2;
+}
+
+.contact-press a:hover {
+  color: #333333;
+}
+
+.contact-press a {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.checkout-success {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 1200px;
+  padding-bottom: 30px;
+}
+
+.payment {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}
+
+.payment-info {
+  height: auto;
+  border: 1px solid #9b9b9b;
+  border-radius: 10px;
+}
+
+hr {
+  display: flex;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #9b9b9b;
+  width: auto;
+  padding: 2px;
+}
+
+.seperator {
+  display: flex;
+  margin: 0;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #9b9b9b;
+  width: 800px;
+}
+
+.filter-button {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.filter-button:hover {
+  font-weight: 800;
+}
+
+.filter-button a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+.payment-info img {
+  width: 250px;
+  height: auto;
+}
+
+.h2-article {
+  padding: 20px;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 0px 10px;
+  border: 1px solid #9b9b9b;
+  border-radius: 10px;
+}
+
+.delivery-options {
+  margin: 20px;
+}
+
+.delivery-options a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+p {
+  width: 400px;
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #9b9b9b;
+}
+
+.checkout-pay-option {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 1200px;
+  padding: 30px;
+}
+
+.order {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.buy-press {
+  background-color: #7fbf3f;
+  max-width: 350px;
+  display: flex;
+  border-radius: 35px;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+.buy-press:hover {
+  background-color: #f2f2f2;
+}
+
+.buy-press a:hover {
+  color: #333333;
+}
+
+.buy-space {
+  padding: 70px 0px;
+}
+
+.buy-press a {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.checkout-final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 30px;
+}
+
+@media (max-width: 1100px) {
+  .payment {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-success {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .order {
+    padding-bottom: 40px;
+    width: 300px;
+  }
+
+  .contact-press {
+    display: flex;
+    margin-left: 0;
+  }
+  .table {
+    width: 300px;
+  }
+
+  .column {
+    display: none;
+  }
+
+  .seperator {
+    width: 300px;
+  }
+
+  .checkout-final,
+  .checkout-pay-option {
+    width: 300px;
+  }
+
+  .payment-info,
+  .delivery {
+    width: 400px;
+  }
+
+  .delivery-options {
+    width: 300px;
+  }
+
+  hr {
+    width: 300px;
+    margin: 5px 0px;
+  }
+
+  p {
+    width: 200px;
+  }
+}

@@ -1,0 +1,155 @@
+main {
+  margin: 10px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  margin: auto;
+  width: 1200px;
+  padding: 30px 0px 70px 0px;
+}
+
+.table a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.checkout-success {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 900px;
+  padding-bottom: 30px;
+}
+
+.checkout-summary {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 900px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 900px;
+  padding-bottom: 20px;
+}
+
+.summary a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  padding: 5px;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 900px;
+  padding-bottom: 30px;
+}
+
+.confirmation a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.confirmation img {
+  width: 400px;
+  height: auto;
+  padding-top: 20px;
+}
+
+.contact-press {
+  background-color: #7fbf3f;
+  max-width: 250px;
+  display: flex;
+  margin-left: auto;
+  border-radius: 25px;
+}
+
+.contact-press:hover {
+  background-color: #f2f2f2;
+}
+
+.contact-press a:hover {
+  color: #333333;
+}
+
+.contact-press a {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.order {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+hr {
+  display: flex;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #9b9b9b;
+  width: 900px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .checkout-success {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  .order {
+    padding-bottom: 40px;
+  }
+
+  .contact-press {
+    display: flex;
+    margin: auto;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .checkout-summary {
+    flex-direction: column;
+  }
+
+  .table {
+    width: 300px;
+  }
+
+  .confirmation,
+  .checkout-summary,
+  .summary {
+    width: 400px;
+  }
+}

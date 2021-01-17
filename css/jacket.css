@@ -1,0 +1,234 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  text-align: left;
+  margin: auto;
+  width: 1200px;
+  padding: 30px 0px 70px 0px;
+}
+
+.table a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 5px;
+}
+
+.jacket {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.details {
+  background: #dddddd;
+  height: 450px;
+  background-image: url("../images/jackets/smix.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.second-details {
+  background: #dddddd;
+  height: 450px;
+  background-image: url("../images/jackets/smix-side.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.all-info {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  padding: 10px;
+}
+
+.all-info a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #9b9b9b;
+  font-size: 0.7em;
+  font-weight: 500;
+  width: 280px;
+}
+
+.price {
+  font-size: 2.5em;
+  padding: 10px 0px;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+}
+
+#color-red {
+  background: #cb2541;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#color-orange {
+  background: #ff4a2d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#color-black {
+  background: #333333;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#color-black:hover,
+#color-red:hover,
+#color-orange:hover {
+  border: 1px solid black;
+}
+
+#sizes {
+  height: 40px;
+  width: 280px;
+  margin: 10px 0px;
+}
+
+.purchase {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 40px;
+  background: #7fbf3f;
+  align-items: center;
+}
+
+.purchase a {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.purchase:hover {
+  background-color: #f2f2f2;
+}
+
+.purchase a:hover {
+  color: #333333;
+}
+
+hr {
+  display: flex;
+  margin-left: 0;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #9b9b9b;
+  width: 280px;
+  padding: 2px;
+}
+
+.more-products {
+  font-size: 3em;
+  padding: 100px 0px 0px 0px;
+}
+
+.items {
+  height: auto;
+}
+
+.items p {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin-bottom: 50px;
+}
+
+.jackets {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding-bottom: 100px;
+}
+
+.jacket-preivew {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.jacket-image {
+  height: 300px;
+  background-image: url("../images/jackets/smix.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jacket-image:hover {
+  background-image: url("../images/jackets/smix-side.jpg");
+}
+
+.jacket-preivew a {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  letter-spacing: 2px;
+}
+
+.h2-jacket {
+  padding: 10px 0px;
+}
+
+@media (max-width: 1000px) {
+  .jackets {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .table {
+    width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .jackets {
+    grid-template-columns: 1fr;
+  }
+  .jacket {
+    grid-template-columns: 1fr;
+  }
+
+  .second-details {
+    display: none;
+  }
+
+  .table {
+    width: 400px;
+  }
+}
