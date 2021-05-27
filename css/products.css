@@ -123,11 +123,11 @@ hr {
   justify-content: space-between;
 }
 
-.filter-button:hover {
-  font-weight: 800;
+.filter-button-font:hover {
+  font-weight: 600;
 }
 
-.filter-button a {
+.filter-button-font {
   font-family: "Nirmala", Arial, Helvetica, sans-serif;
   color: #333333;
 }

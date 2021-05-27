@@ -9,7 +9,7 @@ main {
   align-items: left;
   text-align: left;
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding: 30px 0px 70px 0px;
 }
 
@@ -23,23 +23,12 @@ main {
 
 /*** BUTTON  ***/
 
-.contact-press {
+.contact-press-cta {
   background-color: #7fbf3f;
   max-width: 250px;
   display: flex;
   margin-left: auto;
   border-radius: 25px;
-}
-
-.contact-press:hover {
-  background-color: #f2f2f2;
-}
-
-.contact-press a:hover {
-  color: #333333;
-}
-
-.contact-press a {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-size: 25px;
   padding: 10px 30px;
@@ -50,12 +39,18 @@ main {
   text-decoration: none;
 }
 
+.contact-press-cta:hover {
+  background-color: #f2f2f2;
+  color: #333333;
+  box-shadow: 0px 0px 0px 3px #333333 inset;
+}
+
 .checkout-success {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding-bottom: 30px;
 }
 
@@ -102,7 +97,7 @@ hr {
 }
 
 .filter-button:hover {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .filter-button a {
@@ -151,8 +146,8 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
-  width: 1200px;
-  padding: 30px;
+  max-width: 1200px;
+  padding: 30px 0px;
 }
 
 .order {
@@ -163,31 +158,16 @@ p {
   margin-bottom: 10px;
 }
 
-.buy-press {
+.buy-button {
   background-color: #7fbf3f;
   max-width: 350px;
   display: flex;
   border-radius: 35px;
   justify-content: center;
-  height: 80px;
+  height: 50px;
   align-items: center;
-}
-
-.buy-press:hover {
-  background-color: #f2f2f2;
-}
-
-.buy-press a:hover {
-  color: #333333;
-}
-
-.buy-space {
-  padding: 70px 0px;
-}
-
-.buy-press a {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   padding: 10px 30px;
   letter-spacing: 1px;
   color: #f2f2f2;
@@ -196,13 +176,23 @@ p {
   text-decoration: none;
 }
 
+.buy-button:hover {
+  background-color: #f2f2f2;
+  color: #333333;
+  box-shadow: 0px 0px 0px 3px #333333 inset;
+}
+
+.buy-space {
+  padding: 70px 0px;
+}
+
 .checkout-final {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 1200px;
-  padding: 30px;
+  max-width: 1200px;
+  padding: 30px 0px;
 }
 
 /*** RESPONSIVE  ***/
@@ -221,11 +211,10 @@ p {
   }
 
   .order {
-    padding-bottom: 40px;
     width: 300px;
   }
 
-  .contact-press {
+  .contact-press-cta {
     display: flex;
     margin-left: 0;
   }
@@ -238,7 +227,7 @@ p {
   }
 
   .seperator {
-    width: 300px;
+    width: 90%;
   }
 
   .checkout-final,
@@ -248,7 +237,8 @@ p {
 
   .payment-info,
   .delivery {
-    width: 400px;
+    width: 100%;
+    padding: 0;
   }
 
   .delivery-options {
@@ -256,7 +246,7 @@ p {
   }
 
   hr {
-    width: 300px;
+    width: 95%;
     margin: 5px 0px;
   }
 
