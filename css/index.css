@@ -104,8 +104,9 @@ header {
   min-height: 150px;
 }
 
-.logo {
-  max-width: 200px;
+.logo-display {
+  display: inline-block;
+  width: 200px;
   padding: 10px 20px;
   float: left;
 }
@@ -136,12 +137,6 @@ nav {
   background-image: url("../images/header.jpg");
   height: 700px;
   background-position: center;
-}
-
-.top-picture a {
-  font-family: "Nirmala", Arial, Helvetica, sans-serif;
-  color: #fff;
-  font-weight: 18px;
 }
 
 .top-picture h1 {
@@ -247,7 +242,7 @@ nav {
   max-width: 600px;
 }
 
-.news-title a {
+.news-title-text {
   font-family: "Nirmala", Arial, Helvetica, sans-serif;
   color: #fff;
   text-align: center;
@@ -287,14 +282,19 @@ nav {
   align-items: center;
 }
 
-.title-box a,
-.title-berry a,
-.title-ambassador a,
-.representer a {
+.title-box-text,
+.representer-text {
   font-family: "Nirmala", Arial, Helvetica, sans-serif;
-  color: #333333;
   text-align: center;
   padding-bottom: 10px;
+}
+
+.representer-text {
+  color: white;
+}
+
+.title-box-text {
+  color: #333333;
 }
 
 .title-box h2 {
@@ -311,25 +311,20 @@ nav {
   justify-content: center;
   border-radius: 25px;
   margin-top: 35px;
-}
-
-.button:hover {
-  background-color: #f2f2f2;
-}
-
-.button a:hover {
-  color: #333333;
-}
-
-.button a {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-size: 25px;
   padding: 10px 30px;
   letter-spacing: 1px;
   color: #f2f2f2;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #333333;
+  box-shadow: 0px 0px 0px 3px #333333 inset;
 }
 
 /* FOOTER STYLING*/
