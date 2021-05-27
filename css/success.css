@@ -9,7 +9,7 @@ main {
   align-items: left;
   text-align: left;
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding: 30px 0px 70px 0px;
 }
 
