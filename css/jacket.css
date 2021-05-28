@@ -78,7 +78,14 @@ p {
   padding: 10px 0px;
 }
 
+/**RADIO BUTTONS**/
+
 .colors {
+  display: flex;
+  margin-right: 8px;
+}
+
+.color-options {
   display: flex;
   flex-direction: row;
 }
@@ -88,7 +95,7 @@ p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 10px 10px 5px 1px;
 }
 
 #color-orange {
@@ -96,7 +103,7 @@ p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 10px 10px 5px 0px;
 }
 
 #color-black {
@@ -104,13 +111,7 @@ p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin: 10px;
-}
-
-#color-black:hover,
-#color-red:hover,
-#color-orange:hover {
-  border: 1px solid black;
+  margin: 10px 10px 5px 0px;
 }
 
 #sizes {
@@ -121,10 +122,10 @@ p {
 
 /*** BUTTON ***/
 
-.purchase {
+#purchase {
   display: flex;
   justify-content: center;
-  width: 220px;
+  width: 280px;
   height: 40px;
   background: #7fbf3f;
   align-items: center;
@@ -137,10 +138,14 @@ p {
   letter-spacing: 4px;
 }
 
-.purchase:hover {
+#purchase:hover {
   background-color: #f2f2f2;
   color: #333333;
   box-shadow: 0px 0px 0px 3px #333333 inset;
+}
+
+button {
+  border: none;
 }
 
 hr {

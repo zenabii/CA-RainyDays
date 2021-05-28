@@ -153,6 +153,19 @@ nav {
   right: 50px;
 }
 
+/*CART QUANTITY*/
+
+#cartCount {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #7fbf3f;
+  font-weight: 600;
+  border-radius: 25;
+  padding: 5px;
+  position: relative;
+  left: -18px;
+  top: -20px;
+}
+
 /* COLLECTIONS */
 
 .berry {

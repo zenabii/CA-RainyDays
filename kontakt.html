@@ -51,7 +51,10 @@
     <div class="user">
         <img src="images/user-icon.svg" alt="User icon">
         <img src="images/favorite-icon.svg" alt="Favorites icon">
-        <img src="images/basket-icon.svg" alt="Checkout icon">
+        <a href="checkout.html">
+            <img src="images/basket-icon.svg" alt="Checkout icon">
+            <span id="cartCount"></span>
+        </a>
     </div>
     <div class="climate">
         <img src="images/climate-icon.svg" class="climate-label" alt="Climate icon">
@@ -102,31 +105,31 @@
     <h2 class="h2-help">kontakt oss</h2>
     <form id="contactForm">
         <div>
-            <label>
+            <label id="labelForm">
                 Name (required)
                 <input name="Name" id="Name" />
-            </label>
+            </label id="labelForm">
             <div class="form-error" id="nameError">Please enter your name</div>
         </div>
         <div>
-            <label>
+            <label id="labelForm">
                 Subject (minimum 10 characters)
                 <input name="subject" id="subject" />
-            </label>
+            </label id="labelForm">
             <div class="form-error" id="subjectError">Your subject name must be at least 10 characters</div>
         </div>
         <div>
-            <label>
+            <label id="labelForm">
                 Email (required)
                 <input name="email" id="email" />
-            </label>
+            </label id="labelForm">
             <div class="form-error" id="emailError">Please enter a valid email address</div>
         </div>
         <div>
-            <label>
+            <label id="labelForm">
                 Address (required)
                 <input name="address" id="address" />
-            </label>
+            </label id="labelForm">
             <div class="form-error" id="addressError">Please enter a valid address</div>
         </div>
         <button>Submit</button>
@@ -176,5 +179,6 @@
     <a>&copy; opphavsrett rainy days 2021</a>
 </div>
 <script src="js/contact.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>

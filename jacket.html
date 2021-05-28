@@ -51,7 +51,10 @@
     <div class="user">
         <img src="images/user-icon.svg" alt="User icon">
         <img src="images/favorite-icon.svg" alt="Favorites icon">
-        <img src="images/basket-icon.svg" alt="Checkout icon">
+        <a href="checkout.html">
+            <img src="images/basket-icon.svg" alt="Checkout icon">
+            <span id="cartCount"></span>
+        </a>
     </div>
     <div class="climate">
         <img src="images/climate-icon.svg" class="climate-label" alt="Climate icon">
@@ -72,27 +75,43 @@
         <div class="details" title="Smix Jacket"></div>
             <div class="details" title="Smix Jacket">
                 <div class="all-info">
-                    <h1>smix</h1>
-                    <a class="all-info-text">Super Lett, Skalljakke dame</a>
-                    <h2 class="price">1199,-</h2>
-                    <a class="all-info-text">Velg farge: <b>Svart</b></a>
+                    <form id="formProduct">
+                        <h1>smix</h1>
+                        <a class="all-info-text">Super Lett, Skalljakke dame</a>
+                        <h2 class="price">1199,-</h2>
+                        <a class="all-info-text">Velg farge:</a>
                         <div class="colors">
                             <div id="color-red"></div>
                             <div id="color-orange"></div>
                             <div id="color-black"></div>
                         </div>
+                            <div class="color-options">
+                            <label class="colors">
+                                <input type="radio" name="color" value="red" />
+                            </label>
+                            <label class="colors">
+                                <input type="radio" name="color" value="orange" />
+                            </label>
+                            <label class="colors">
+                                <input type="radio" name="color" value="black" />
+                            </label>
+                        </div>  
                         <select name="sizes" id="sizes">
                             <option value="XS">XS</option>
                             <option value="S">S</option>
                             <option value="M">M</option>
                             <option value="L">L</option>
                         </select>
-                    <a href="checkout.html" class="purchase">legg til i handlekurven</a>
-                    <p>Kjøp nå, betal med senere med Klarna. Ingen avgifter.</p>
-                    <hr>
-                    <p>Jakken er normal i størrelsen. Både vindtett og vanntett. 
-                        Kan ikke vaskes på mer enn 30 grader</p>
-                    <hr>
+                        <input type="hidden" value="1199" name="price" />
+                        <input type="hidden" value="SMIX" name="name" />
+                        <input type="hidden" value="images/jackets/smix.jpg" name="image" />
+                        <button type="submit" id="purchase">legg til i handlekurven</button>
+                        <p>Kjøp nå, betal med senere med Klarna. Ingen avgifter.</p>
+                        <hr>
+                        <p>Jakken er normal i størrelsen. Både vindtett og vanntett. 
+                            Kan ikke vaskes på mer enn 30 grader</p>
+                        <hr>
+                    </form>
                 </div>
             </div>
     </section>
@@ -167,5 +186,6 @@
 <div class="klarna">
     <a>&copy; opphavsrett rainy days 2021</a>
 </div>
+<script src="js/cart.js"></script>
 </body>
 </html>

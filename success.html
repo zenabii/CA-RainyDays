@@ -51,7 +51,10 @@
     <div class="user">
         <img src="images/user-icon.svg" alt="User icon">
         <img src="images/favorite-icon.svg" alt="Favorites icon">
-        <img src="images/basket-icon.svg" alt="Checkout icon">
+        <a href="checkout.html">
+            <img src="images/basket-icon.svg" alt="Checkout icon">
+            <span id="cartCount"></span>
+        </a>
     </div>
     <div class="climate">
         <img src="images/climate-icon.svg" class="climate-label" alt="Climate icon">
@@ -81,8 +84,8 @@
     </div>
     <hr>
     <div class="confirmation">
-        <a class="order">Ordre #2301329 (13.11.2020)</a>
-        <img src="images/purchased-item.png" alt="purchased item">
+        <a class="order">Ordre #2301329</a>
+        <div id="cartProducts"></div>
     </div>
     <hr>
     <div class="checkout-summary">
@@ -145,5 +148,6 @@
 <div class="klarna">
     <a>&copy; opphavsrett rainy days 2021</a>
 </div>
+<script src="js/cart.js"></script>
 </body>
 </html>
