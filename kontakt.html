@@ -69,7 +69,7 @@
         <div class="help-options">
             <img src="images/contact/return.svg" class="icons">
             <a>Returer</a>
-        </div>
+                </div>
         <div class="help-options"> 
             <img src="images/contact/orders.svg" class="icons">
             <a>Bestillinger</a>
@@ -100,42 +100,45 @@
         </div>
     </section>
     <h2 class="h2-help">kontakt oss</h2>
-    <section class="contact">
-        <div class="contact-form">
-            <form>
-                <input type="text" name="name" placeholder="*Navn" id="name" class="form_input">
-            </form>
+    <form id="contactForm">
+        <div>
+            <label>
+                Name (required)
+                <input name="Name" id="Name" />
+            </label>
+            <div class="form-error" id="nameError">Please enter your name</div>
         </div>
-        <div class="contact-form">
-            <form>
-                <input type="text" name="name" placeholder="*E-post" id="name" class="form_input">
-            </form>
+        <div>
+            <label>
+                Subject (minimum 10 characters)
+                <input name="subject" id="subject" />
+            </label>
+            <div class="form-error" id="subjectError">Your subject name must be at least 10 characters</div>
         </div>
-        <div class="contact-form">
-            <form>
-                <input type="text" name="name" placeholder="Telefonnummer" id="name" class="form_input">
-            </form>
+        <div>
+            <label>
+                Email (required)
+                <input name="email" id="email" />
+            </label>
+            <div class="form-error" id="emailError">Please enter a valid email address</div>
         </div>
-        <div class="contact-form">
-            <form>
-                <input type="text" name="name" placeholder="Bestillingsnummer: EP000.." id="name" class="form_input">
-            </form>
+        <div>
+            <label>
+                Address (required)
+                <input name="address" id="address" />
+            </label>
+            <div class="form-error" id="addressError">Please enter a valid address</div>
         </div>
-    </section>
-    <section class="message">
-        <div class="message-text">
-            <input type="text" name="name"  id="name" class="message_input">
-        </div>
-            <a class="contact-press-button">send</a>
-    </section>    
+        <button>Submit</button>
+    </form>
 </main>
-<!-- FOOTER -->
+    <!-- FOOTER -->
 <div class="newsletter" title="Sign up for our newsletter">
     <div class="news-title">
         <h2 class="h2-news">meld deg på vårt nyhetsbrev</h2>
         <a class="representer-text">Vil du være først ute med nyheter, tilbud, arrangementer og inspirasjon?</a>
         <a class="representer-text">Meld deg på vårt nyhetsbrev her.</a>
-        <a class="button">registrer her</a>
+            <a class="button">registrer her</a>
     </div>
 </div>
 <footer>
@@ -172,5 +175,6 @@
 <div class="klarna">
     <a>&copy; opphavsrett rainy days 2021</a>
 </div>
+<script src="js/contact.js"></script>
 </body>
 </html>

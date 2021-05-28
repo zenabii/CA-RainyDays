@@ -1,27 +1,6 @@
-.search input {
-  width: 450px;
-  height: 30px;
-  border: none;
-  background-color: #505050;
-  border-radius: 0px 2px 2px 0px;
-  font-weight: 600;
-}
-
-.search {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 60px;
-}
-
 .help-title {
   text-align: center;
   margin: 100px 0px 30px 0px;
-}
-
-main {
-  margin: 10px;
 }
 
 .help {
@@ -75,6 +54,7 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+/*
 .contact-form {
   display: flex;
   flex-direction: row;
@@ -115,6 +95,7 @@ main {
   padding: 5px;
   margin-top: 15px;
 }
+*/
 
 .contact-press-button {
   background-color: #7fbf3f;
@@ -136,6 +117,45 @@ main {
   background-color: #f2f2f2;
   color: #333333;
   box-shadow: 0px 0px 0px 3px #333333 inset;
+}
+
+form {
+  padding: 2em;
+  background: white;
+  border-radius: 1rem;
+  width: 700px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: hotpink;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 /*** RESPONSIVE ***/
