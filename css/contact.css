@@ -125,19 +125,11 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .contact {
-    grid-template-columns: 1fr;
+  #labelForm {
+    width: 300px;
   }
 
-  .message_input {
-    width: 380px;
-  }
-
-  .message {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 400px;
+  #contactForm {
+    width: 300px;
   }
 }
