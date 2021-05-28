@@ -384,12 +384,13 @@ footer ul a {
 
 @media (min-width: 1000px) {
   nav {
-    display: inline-block;
-    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 90px;
+    margin-top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
   }
 
   .hamburger-label {
@@ -456,10 +457,11 @@ footer ul a {
   }
 
   .search {
-    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: 60px;
   }
 
