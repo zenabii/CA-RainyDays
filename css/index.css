@@ -59,6 +59,10 @@ h3 {
   text-decoration: none;
 }
 
+.footer-content a:hover {
+  text-decoration: underline 1px solid black;
+}
+
 body {
   margin: 0%;
 }
@@ -162,6 +166,17 @@ nav {
   position: relative;
   left: -18px;
   top: -20px;
+}
+
+.cartJacket {
+  width: 100px;
+}
+
+#productTitle {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 20px 0;
 }
 
 /* COLLECTIONS */

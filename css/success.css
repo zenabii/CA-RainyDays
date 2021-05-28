@@ -52,6 +52,17 @@ main {
   padding: 5px;
 }
 
+.cartJacket {
+  width: 100px;
+}
+
+#productTitle {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 20px 0;
+}
+
 .confirmation {
   display: flex;
   flex-direction: column;
@@ -68,12 +79,6 @@ main {
   padding: 5px;
 }
 
-.confirmation img {
-  width: 400px;
-  height: auto;
-  padding-top: 20px;
-}
-
 .contact-press {
   background-color: #7fbf3f;
   max-width: 250px;
@@ -84,13 +89,11 @@ main {
 
 .contact-press:hover {
   background-color: #f2f2f2;
-}
-
-.contact-press a:hover {
   color: #333333;
+  box-shadow: 0px 0px 0px 3px #333333 inset;
 }
 
-.contact-press a {
+.contact-press {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   font-size: 25px;
   padding: 10px 30px;

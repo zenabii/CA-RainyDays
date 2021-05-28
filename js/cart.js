@@ -55,8 +55,8 @@ if (checkoutQuantity || cartProducts) {
             sumTotal += parseInt(product.price);
             const output = `
             <div>
-                <img src="${product.image}" alt="purchased product">
-                <h5>${product.name}</h5>
+                <img src="${product.image}" alt="purchased product" class="cartJacket">
+                <h5 id="productTitle">${product.name}</h5>
             </div>
             `;
             cartProducts.innerHTML += output;
