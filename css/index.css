@@ -122,6 +122,7 @@ nav {
 
 #hamburger-menu:checked ~ nav {
   display: block;
+  padding-top: 50px;
 }
 
 .hamburger-label {
@@ -405,6 +406,20 @@ footer ul a {
   padding: 10px 0px;
 }
 
+.user {
+  display: flex;
+  float: right;
+  top: 35px;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.user img {
+  width: 25px;
+  height: auto;
+  padding: 0px 10px;
+}
+
 /*** RESPONSIVE  ***/
 
 @media (min-width: 1000px) {
@@ -496,20 +511,6 @@ footer ul a {
     background-color: #505050;
     border-radius: 2px 0px 0px 2px;
   }
-
-  .user {
-    display: flex;
-    float: right;
-    top: 35px;
-    position: relative;
-    padding: 0px 20px;
-  }
-
-  .user img {
-    width: 25px;
-    height: auto;
-    padding: 0px 10px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -554,7 +555,7 @@ footer ul a {
     float: right;
     position: relative;
     top: 85px;
-    left: 150px;
+    left: 60px;
     font-family: "Nirmala", Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 13px;

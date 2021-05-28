@@ -47,6 +47,7 @@ function loadCart() {
     getCartQuantity();
 }
 
+
 if (checkoutQuantity || cartProducts) {
     var sumTotal = 0;
     for (const key in cart) {
