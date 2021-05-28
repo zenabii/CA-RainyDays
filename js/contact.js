@@ -5,8 +5,6 @@ const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
-const address = document.querySelector("#address");
-const addressError = document.querySelector("#addressError");
 
 
 function validateForm(event) {
@@ -20,7 +18,7 @@ function validateForm(event) {
         pass = false
     }
 
-    if (checkLength(subject.value, 10) === true) {
+    if (checkLength(subject.value, 0) === true) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
@@ -34,15 +32,8 @@ function validateForm(event) {
         pass = false
     }
 
-    if (checkLength(address.value, 25) === true) {
-        addressError.style.display = "none";
-    } else {
-        addressError.style.display = "block";
-        pass = false
-    }
-
     if (pass === true) {
-        alert("Thank you for submitting! <3");
+        alert("Takk for din melding! Vi svarer alltid innen 48 timer.");
         event.target.reset();
     }
 }

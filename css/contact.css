@@ -46,58 +46,12 @@
   letter-spacing: 4px;
 }
 
-.contact {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 15px 5px;
-  grid-template-columns: 1fr 1fr;
-}
-
-/*
-.contact-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.form_input {
-  width: 380px;
-  height: 40px;
-  border: 1px solid #9b9b9b;
+.formFont {
   font-family: "Nirmala", Arial, Helvetica, sans-serif;
-  color: #9b9b9b;
-  padding: 5px;
+  color: #333333;
 }
 
-.message {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 15px 5px;
-  grid-template-columns: 1fr;
-}
-
-.message-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.message_input {
-  width: 780px;
-  height: 100px;
-  border: 1px solid #9b9b9b;
-  font-family: "Nirmala", Arial, Helvetica, sans-serif;
-  color: #9b9b9b;
-  padding: 5px;
-  margin-top: 15px;
-}
-*/
-
-.contact-press-button {
+#formButton {
   background-color: #7fbf3f;
   max-width: 150px;
   display: flex;
@@ -113,7 +67,7 @@
   letter-spacing: 2px;
 }
 
-.contact-press-button:hover {
+#formButton:hover {
   background-color: #f2f2f2;
   color: #333333;
   box-shadow: 0px 0px 0px 3px #333333 inset;
@@ -127,22 +81,18 @@
   margin: 0 auto;
 }
 
-input {
+#Name,
+#email,
+#subject,
+#message {
   width: 100%;
   margin-top: 2px;
   padding: 10px;
   font-size: 16px;
 }
 
-button {
-  background: hotpink;
-  border: none;
-  width: 200px;
-  padding: 1rem;
-  color: white;
-  margin-top: 10px;
-  cursor: pointer;
-  border-radius: 0.2rem;
+#message {
+  height: 150px;
 }
 
 #labelForm {
@@ -156,6 +106,10 @@ button {
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 2px;
+}
+
+button {
+  border: none;
 }
 
 /*** RESPONSIVE ***/

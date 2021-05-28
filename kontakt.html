@@ -106,33 +106,32 @@
     <form id="contactForm">
         <div>
             <label id="labelForm">
-                Name (required)
+                <a class="formFont">Navn (nødvendig)</a>
                 <input name="Name" id="Name" />
             </label id="labelForm">
-            <div class="form-error" id="nameError">Please enter your name</div>
+            <div class="form-error" id="nameError">Vennligst skriv inn navnet ditt</div>
         </div>
         <div>
             <label id="labelForm">
-                Subject (minimum 10 characters)
+                <a class="formFont">Emne (nødvendig)</a> 
                 <input name="subject" id="subject" />
             </label id="labelForm">
-            <div class="form-error" id="subjectError">Your subject name must be at least 10 characters</div>
+            <div class="form-error" id="subjectError">Vennligst skriv inn emnet</div>
         </div>
         <div>
             <label id="labelForm">
-                Email (required)
+                <a class="formFont">Epost (nødvendig)</a>
                 <input name="email" id="email" />
             </label id="labelForm">
-            <div class="form-error" id="emailError">Please enter a valid email address</div>
+            <div class="form-error" id="emailError">Vennligst skriv inn en gyldig epost</div>
         </div>
         <div>
             <label id="labelForm">
-                Address (required)
-                <input name="address" id="address" />
+                <a class="formFont">Melding</a>
+                <textarea name="Melding" type="text" id="message"></textarea>
             </label id="labelForm">
-            <div class="form-error" id="addressError">Please enter a valid address</div>
         </div>
-        <button>Submit</button>
+        <button id="formButton">Submit</button>
     </form>
 </main>
     <!-- FOOTER -->

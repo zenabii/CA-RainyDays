@@ -2,8 +2,6 @@
   font-family: "Nirmala";
   src: url(../fonts/Nirmala.woff) format("woff"),
     url(../fonts/Nirmala.woff2) format("woff2");
-  font-family: "Bebas Neue";
-  src: url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
 }
 
 h1 {
