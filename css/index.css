@@ -149,7 +149,6 @@ nav {
 
 .topp-innhold {
   max-width: 300px;
-  display: absolute;
   float: right;
   position: relative;
   top: 300px;
@@ -273,7 +272,7 @@ nav {
   color: #fff;
   text-align: center;
   font-size: 18px;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 /* TTITLE BOX STYLING */
@@ -479,7 +478,6 @@ footer ul a {
 
   .topp-innhold {
     max-width: 500px;
-    display: absolute;
     float: right;
     position: relative;
     top: 300px;
