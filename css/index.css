@@ -67,12 +67,30 @@ body {
   margin: 0%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.back-to-top i {
+  font-size: 2em;
+  color: #232323;
+}
+
+.back-to-top i:hover {
+  color: #5f5f5f;
+}
+
 /* HEADER STYLING */
 .top,
 .klarna,
 .search,
-.user,
-.climate {
+.user {
   display: none;
 }
 
@@ -122,15 +140,16 @@ nav {
 
 #hamburger-menu:checked ~ nav {
   display: block;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .hamburger-label {
   float: right;
+  position: relative;
+  top: -60px;
   color: #fff;
   padding: 10px;
   font-size: 1.5em;
-  display: block;
 }
 
 /* TOP HEADER PICTURE */
@@ -407,10 +426,7 @@ footer ul a {
 
 .user {
   display: flex;
-  float: right;
-  top: 35px;
-  position: relative;
-  padding: 0px 20px;
+  padding: 20px 0px;
 }
 
 .user img {
@@ -512,6 +528,10 @@ footer ul a {
 }
 
 @media (min-width: 1200px) {
+  .user {
+    float: right;
+  }
+
   .collections {
     flex-direction: row;
     max-width: 1600px;
@@ -546,23 +566,5 @@ footer ul a {
 
   .berry-collection {
     padding: 10px;
-  }
-
-  .climate {
-    display: flex;
-    float: right;
-    position: relative;
-    top: 85px;
-    left: 60px;
-    font-family: "Nirmala", Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  .climate img {
-    width: 25px;
-    height: auto;
-    padding: 0px 10px;
   }
 }
