@@ -199,16 +199,11 @@ hr {
   }
 
   .table {
-    width: 400px;
+    width: 360px;
   }
 
   .filter-button {
     margin: 0 auto;
-  }
-
-  h2 {
-    margin: 0 auto;
-    text-align: center;
   }
 
   .filter {

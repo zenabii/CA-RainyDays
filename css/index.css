@@ -21,7 +21,7 @@ h2 {
 }
 
 .h2-main {
-  font-size: 3em;
+  font-size: 2.8em;
 }
 
 .h2-news {
@@ -314,7 +314,7 @@ nav {
 .title-box,
 .title-ambassador {
   display: flex;
-  width: 400px;
+  width: 375px;
   flex-direction: column;
   align-items: center;
   padding: 10px 0px;
@@ -427,6 +427,7 @@ footer ul a {
 .user {
   display: flex;
   padding: 20px 0px;
+  margin: 0;
 }
 
 .user img {
