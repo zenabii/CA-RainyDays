@@ -187,15 +187,27 @@ hr {
   box-sizing: border-box;
 }
 
-.jacket-image {
+.jacket-image-smix,
+.jacket-image-helly {
   height: 300px;
-  background-image: url("../images/jackets/smix.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.jacket-image:hover {
+.jacket-image-smix {
+  background-image: url("../images/jackets/smix.jpg");
+}
+
+.jacket-image-smix:hover {
   background-image: url("../images/jackets/smix-side.jpg");
+}
+
+.jacket-image-helly {
+  background-image: url("../images/jackets/rod-forside.jpg");
+}
+
+.jacket-image-helly:hover {
+  background-image: url("../images/jackets/rod-side.png");
 }
 
 .jacket-preivew a {
