@@ -28,42 +28,34 @@ main {
 .jacket {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 20;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 
+.product-jacket {
+  height: 450px;
+}
+
 .details {
   background: #dddddd;
   height: 450px;
-  background-image: url("../images/jackets/smix.jpg");
+
   background-size: cover;
   background-position: center;
   padding: 10px;
 }
 
-.details-red {
-  background: #dddddd;
-  height: 450px;
-  background-image: url("../images/jackets/rod-forside.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 10px;
-}
 
-.second-details-red {
-  background: #dddddd;
+.imgproduct {
   height: 450px;
-  background-image: url("../images/jackets/rod-side.png");
-  background-size: cover;
-  background-position: center;
-  padding: 10px;
 }
 
 .second-details {
   background: #dddddd;
   height: 450px;
-  background-image: url("../images/jackets/smix-side.jpg");
+
   background-size: cover;
   background-position: center;
   padding: 10px;

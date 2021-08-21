@@ -36,7 +36,9 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex: row;
   justify-content: right;
+  align-items: right;
   padding-bottom: 40px;
 }
 
