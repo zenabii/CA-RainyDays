@@ -4,6 +4,7 @@ const baseUrl = "https://ca.zenabi.no/wp-json/wc/store/products";
 const jackets = document.querySelector(".jackets");
 const perPage = document.querySelector(".per-page-selection");
 const categories = document.querySelectorAll(".categories");
+const search = document.querySelector(".search-button");
 
 async function getProducts(url) {
     const response = await fetch(url);
@@ -47,3 +48,10 @@ categories.forEach(function (category) {
         getProducts(newUrl);
     }
 })
+
+search.onclick = function () {
+    const searchInput = document.querySelector("#search-input").value;
+    const newUrl = baseUrl + `?search=${searchInput}`;
+    jackets.innerHTML = "";
+    getProducts(newUrl);
+}

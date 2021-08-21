@@ -13,6 +13,12 @@ a {
   font-size: 2em;
 }
 
+label {
+  font-family: "Nirmala", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 1em;
+}
+
 .table {
   display: flex;
   flex-direction: column;
