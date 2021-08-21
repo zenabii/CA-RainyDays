@@ -36,9 +36,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex: row;
   justify-content: right;
-  align-items: right;
   padding-bottom: 40px;
 }
 
@@ -71,7 +69,7 @@ a {
 .items p {
   font-family: "Nirmala", Arial, Helvetica, sans-serif;
   color: #333333;
-  margin-bottom: 50px;
+  margin: 0;
 }
 
 .jackets {
@@ -87,27 +85,10 @@ a {
   box-sizing: border-box;
 }
 
-.jacket-image-smix,
-.jacket-image-helly {
+.imgproduct {
   height: 300px;
   background-size: cover;
   background-position: center;
-}
-
-.jacket-image-smix {
-  background-image: url("../images/jackets/smix.jpg");
-}
-
-.jacket-image-smix:hover {
-  background-image: url("../images/jackets/smix-side.jpg");
-}
-
-.jacket-image-helly {
-  background-image: url("../images/jackets/rod-forside.jpg");
-}
-
-.jacket-image-helly:hover {
-  background-image: url("../images/jackets/rod-side.png");
 }
 
 .jacket-preivew a {
