@@ -19,7 +19,6 @@ async function getProduct(url) {
     title.innerHTML = product.name
 
     jacket.innerHTML += `
-
     <div class="second-details"><img src="${product.images[0].src}" class="imgproduct"></div>
     `;
 
