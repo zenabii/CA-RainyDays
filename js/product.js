@@ -25,5 +25,3 @@ async function getProduct(url) {
 }
 
 getProduct(url);
-
-//img src="${product.images[0].src}"
