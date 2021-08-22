@@ -24,8 +24,6 @@ async function getProducts(url) {
 
 }
 
-getProducts(baseUrl);
-
 
 perPage.onchange = function (event) {
 
@@ -54,6 +52,8 @@ if (params.has("category")) {
     const category = params.get("category");
     let button = document.querySelector("div.categories input[value='" + category + "']");
     button.click();
+} else {
+    getProducts(baseUrl);
 }
 
 search.onclick = function () {
