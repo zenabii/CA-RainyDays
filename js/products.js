@@ -49,6 +49,13 @@ categories.forEach(function (category) {
     }
 })
 
+let params = (new URL(document.location)).searchParams;
+if (params.has("category")) {
+    const category = params.get("category");
+    let button = document.querySelector("div.categories input[value='" + category + "']");
+    button.click();
+}
+
 search.onclick = function () {
     const searchInput = document.querySelector("#search-input").value;
     const newUrl = baseUrl + `?search=${searchInput}`;
