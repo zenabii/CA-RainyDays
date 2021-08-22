@@ -25,3 +25,4 @@ async function getProduct(url) {
 }
 
 getProduct(url);
+
