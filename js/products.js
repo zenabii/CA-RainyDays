@@ -10,26 +10,29 @@ async function getProducts(url) {
     const response = await fetch(url);
     const products = await response.json();
     products.forEach(function (product) {
-        jackets.innerHTML += `
-        <div class="jacket-preview">
-        <a href="/product.html?id=${product.id}">
-        <div class="jacket-image"><img src="${product.images[0].src}" class="imgproduct"></div>
-        <h2 class="h2-jacket">${product.name}</h2>
-        <a>${product.description}</a>
-        <h2 class="h2-jacket">${product.prices.price} ${product.prices.currency_code}</h2>
-        </a>
-        </div>
-        `
+        if (jackets) {
+            jackets.innerHTML += `
+            <div class="jacket-preview">
+            <a href="/product.html?id=${product.id}">
+            <div class="jacket-image"><img src="${product.images[0].src}" class="imgproduct"></div>
+            <h2 class="h2-jacket">${product.name}</h2>
+            <a>${product.description}</a>
+            <h2 class="h2-jacket">${product.prices.price} ${product.prices.currency_code}</h2>
+            </a>
+            </div>
+            `
+        }
     });
 
 }
 
-
-perPage.onchange = function (event) {
-
-    const newUrl = baseUrl + `?per_page=${event.target.value}`;
-    jackets.innerHTML = "";
-    getProducts(newUrl);
+if (perPage) {
+    perPage.onchange = function (event) {
+    
+        const newUrl = baseUrl + `?per_page=${event.target.value}`;
+        jackets.innerHTML = "";
+        getProducts(newUrl);
+    }
 }
 
 categories.forEach(function (category) {
@@ -47,19 +50,20 @@ categories.forEach(function (category) {
     }
 })
 
-let params = (new URL(document.location)).searchParams;
-if (params.has("category")) {
-    const category = params.get("category");
+let productsParams = (new URL(document.location)).searchParams;
+if (productsParams.has("category")) {
+    const category = productsParams.get("category");
     let button = document.querySelector("div.categories input[value='" + category + "']");
     button.click();
 } else {
     getProducts(baseUrl);
-    console.log("hello");
 }
 
-search.onclick = function () {
-    const searchInput = document.querySelector("#search-input").value;
-    const newUrl = baseUrl + `?search=${searchInput}`;
-    jackets.innerHTML = "";
-    getProducts(newUrl);
+if (search) {
+    search.onclick = function () {
+        const searchInput = document.querySelector("#search-input").value;
+        const newUrl = baseUrl + `?search=${searchInput}`;
+        jackets.innerHTML = "";
+        getProducts(newUrl);
+    }
 }

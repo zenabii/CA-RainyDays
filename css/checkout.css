@@ -39,6 +39,22 @@ main {
   text-decoration: none;
 }
 
+.contact-press-empty {
+  background-color: red;
+  max-width: 250px;
+  display: flex;
+  margin-left: auto;
+  border-radius: 25px;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
 .contact-press-cta:hover {
   background-color: #f2f2f2;
   color: #333333;
