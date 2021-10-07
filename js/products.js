@@ -54,6 +54,7 @@ if (params.has("category")) {
     button.click();
 } else {
     getProducts(baseUrl);
+    console.log("hello");
 }
 
 search.onclick = function () {
