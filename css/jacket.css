@@ -26,11 +26,11 @@ main {
 }
 
 .jacket {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 70px auto;
   margin-top: 20;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
 
@@ -46,7 +46,6 @@ main {
   background-position: center;
   padding: 10px;
 }
-
 
 .imgproduct {
   height: 450px;
