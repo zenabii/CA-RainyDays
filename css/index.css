@@ -98,6 +98,11 @@ nav li {
   display: block;
 }
 
+.active {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
 nav a {
   font-family: "Nirmala", Arial, Helvetica, sans-serif;
   text-decoration: none;
